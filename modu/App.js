@@ -1,10 +1,11 @@
 import React from 'react';
-import MyPage from './MyPage';
-import Login from './Login';
+import MyPage from './Pages/Mypage';
+import HomePage from './Pages/HomePage';
 
 const App = () => {
   return (
-    <Login></Login>
+    // <MyPage></MyPage>
+    <HomePage></HomePage>
   );
 };
 export default App;
