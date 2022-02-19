@@ -14,6 +14,12 @@
 		4FFAE442B7724591C2BC9C3C /* libPods-modu-moduTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA375B23DEBD862EB458D7B2 /* libPods-modu-moduTests.a */; };
 		5D4A5437C4BCE4023941D92F /* libPods-modu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9F8B2D428EC12A8D7451B4 /* libPods-modu.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E532477279B44CBDAB5BBBD4 /* NanumBarunGothic-YetHangul.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5661ED2978491AB190336B /* NanumBarunGothic-YetHangul.otf */; };
+		53A429F5FBEA4021AB50CDC2 /* NanumBarunGothic-YetHangul.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC43AACB1344109BA88734C /* NanumBarunGothic-YetHangul.ttf */; };
+		13EDCB29180748AD9A4E14D4 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070E9C8BE7B45738B8A1597 /* NanumSquareRoundB.ttf */; };
+		28322212F5EE4AB59E5A2129 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F583AF785D05457DBF9602BC /* NanumSquareRoundEB.ttf */; };
+		EA5E467F07784A8AB93547C5 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018671BF290E4742A2F0EB71 /* NanumSquareRoundL.ttf */; };
+		1074949BBCEA4C5D8942DE42 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EC409EA7BC8405D826AB3B0 /* NanumSquareRoundR.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		BA375B23DEBD862EB458D7B2 /* libPods-modu-moduTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modu-moduTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FC9F8B2D428EC12A8D7451B4 /* libPods-modu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-modu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5661ED2978491AB190336B /* NanumBarunGothic-YetHangul.otf */ = {isa = PBXFileReference; name = "NanumBarunGothic-YetHangul.otf"; path = "../assets/fonts/NanumBarunGothic-YetHangul.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BCC43AACB1344109BA88734C /* NanumBarunGothic-YetHangul.ttf */ = {isa = PBXFileReference; name = "NanumBarunGothic-YetHangul.ttf"; path = "../assets/fonts/NanumBarunGothic-YetHangul.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B070E9C8BE7B45738B8A1597 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; name = "NanumSquareRoundB.ttf"; path = "../assets/fonts/NanumSquareRoundB.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F583AF785D05457DBF9602BC /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; name = "NanumSquareRoundEB.ttf"; path = "../assets/fonts/NanumSquareRoundEB.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		018671BF290E4742A2F0EB71 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; name = "NanumSquareRoundL.ttf"; path = "../assets/fonts/NanumSquareRoundL.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3EC409EA7BC8405D826AB3B0 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; name = "NanumSquareRoundR.ttf"; path = "../assets/fonts/NanumSquareRoundR.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +145,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				57AC5B965BA2911E035CF889 /* Pods */,
+				EC4928BD1B0942389874085C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +160,20 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		EC4928BD1B0942389874085C /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				DD5661ED2978491AB190336B /* NanumBarunGothic-YetHangul.otf */,
+				BCC43AACB1344109BA88734C /* NanumBarunGothic-YetHangul.ttf */,
+				B070E9C8BE7B45738B8A1597 /* NanumSquareRoundB.ttf */,
+				F583AF785D05457DBF9602BC /* NanumSquareRoundEB.ttf */,
+				018671BF290E4742A2F0EB71 /* NanumSquareRoundL.ttf */,
+				3EC409EA7BC8405D826AB3B0 /* NanumSquareRoundR.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +271,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E532477279B44CBDAB5BBBD4 /* NanumBarunGothic-YetHangul.otf in Resources */,
+				53A429F5FBEA4021AB50CDC2 /* NanumBarunGothic-YetHangul.ttf in Resources */,
+				13EDCB29180748AD9A4E14D4 /* NanumSquareRoundB.ttf in Resources */,
+				28322212F5EE4AB59E5A2129 /* NanumSquareRoundEB.ttf in Resources */,
+				EA5E467F07784A8AB93547C5 /* NanumSquareRoundL.ttf in Resources */,
+				1074949BBCEA4C5D8942DE42 /* NanumSquareRoundR.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
