@@ -4,8 +4,8 @@ import HomePage from './Pages/HomePage';
 
 const App = () => {
   return (
-    // <MyPage></MyPage>
-    <HomePage></HomePage>
+    <MyPage></MyPage>
+    // <HomePage></HomePage>
   );
 };
 export default App;
