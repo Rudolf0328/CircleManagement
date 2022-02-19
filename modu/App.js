@@ -7,7 +7,7 @@ const App = () => {
   return (
     // <MyPage></MyPage>
     // <HomePage></HomePage>
-    <DetailPage circleName={"에오스"}></DetailPage>
+    <DetailPage circleName={"[한양대] 에오스"}></DetailPage>
   );
 };
 export default App;
