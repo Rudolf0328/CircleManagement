@@ -1,6 +1,7 @@
 import React from 'react';
-import MyPage from './Pages/Mypage';
-import HomePage from './Pages/HomePage';
+// import MyPage from './Pages/Mypage';
+// import HomePage from './Pages/HomePage';
+// import DetailHomePage from './Pages/DetailHome';
 import DetailPage from './Pages/DetailPage';
 
 const App = () => {

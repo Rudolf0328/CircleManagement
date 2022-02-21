@@ -20,10 +20,14 @@ export const DetailCalendar = ({style}) => {
         <View style={style}>
             <Calendar
                 style={{
-                    
-                    // backgroundColor: "#FF0000"
+                    borderRadius: 10,
+                    borderWidth: 2,
+                    borderColor: "#f0f0f0"
+                    // backgroundColor: "#080808"
                 }}
                 theme={{
+                    // calendarBackground: "#f5f5f5",
+                    // backgroundColor: "#808080",
                     textMonthFontFamily: Fonts.Dohyeon,
                     textDayFontFamily: Fonts.Dohyeon,
                     textDayHeaderFontFamily: Fonts.Dohyeon,
