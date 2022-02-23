@@ -1,34 +1,14 @@
 import React, {useState} from 'react';
-import styled from 'styled-components/native';
-
-const SearchBarWrapper = styled.View`
-  flex-direction: row;
-  align-items: center;
-  background-color: #efefef;
-  border-radius: 4px;
-  padding: 10px 14px 10px 12px;
-  margin: 0px 20px;
-  display: flex;
-`;
-
-const SearchInput = styled.TextInput`
-  margin-left: 10px;
-  include-font-padding: false;
-  padding: 0px;
-`;
-
-const SearchIcon = styled.Image`
-  width: 18px;
-  height: 18px;
-`;
+import { StyleSheet, View, Image } from 'react-native';
+import { TextInput } from 'react-native-gesture-handler';
 
 export default function SearchBar() {
   const [value, setValue] = useState('');
 
   return (
-    <SearchBarWrapper>
-      <SearchIcon source={require('../../images/search.png')} />
-      <SearchInput
+    <View style={styles.searchBarWrapper}>
+      <Image style={styles.searchIcon} source={require('../../images/search.png')} />
+      <TextInput style={styles.searchInput}
         autoCapitalize="none"
         autoCorrect={false}
         onChangeText={setValue}
@@ -37,6 +17,37 @@ export default function SearchBar() {
         returnKeyLabel="search"
         value={value}
       />
-    </SearchBarWrapper>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  searchBarWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#efefef',
+    borderRadius: 4,
+    // paddingTop: 10,
+    // paddingRight: 14,
+    // paddingBottom: 10,
+    paddingLeft: 12,
+    marginTop: 0,
+    width: '100%',
+    height: '25%',
+    // marginRight: 20,
+    display: 'flex',
+  },
+  searchInput: {
+    marginLeft: 10,
+    marginRight: 10,
+    paddingRight: 10,
+    includeFontPadding: false,
+    padding: 0,
+    backgroundColor: '#fff',
+    width: '100%'
+  },
+  searchIcon: {
+    width: '10%',
+    resizeMode: 'contain',
+  }
+});
