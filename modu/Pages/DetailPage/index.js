@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View, useWindowDimensions, useState, TouchableOpacity } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, useWindowDimensions, useState, TouchableOpacity, Image } from 'react-native';
 import colors from '../../constants/colors';
 import consts from '../../constants/consts';
 import { Fonts } from '../../Fonts';
@@ -7,7 +7,9 @@ import "react-native-gesture-handler";
 import { TabView, TabBar } from 'react-native-tab-view';
 import DetailHomePage from '../DetailHome';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { TouchableHighlight } from 'react-native-gesture-handler';
 
+const LOGO_SIZE = 10;
 const DetailPage = (props) => {
     const layout = useWindowDimensions();
     const [index, setIndex] = React.useState(0);    
@@ -37,6 +39,13 @@ const DetailPage = (props) => {
                 <TouchableOpacity>
                     <Icon name="chevron-back" style={styles.iconStyle} />
                 </TouchableOpacity>
+                <TouchableHighlight style={styles.circleImgContainer}>
+                    <Image
+                        style={styles.circleImage}
+                        source={require('../../images/eoslogo.png')}
+                        resizeMode='contain'
+                    />
+                </TouchableHighlight>
                 
                 <Text style={styles.circleNameText}>{props.circleName}</Text> 
                 
@@ -101,6 +110,18 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: colors.text,
         alignSelf: "center"
+    },
+    circleImage: {
+        height: LOGO_SIZE,
+        width: LOGO_SIZE,
+        borderRadius: 100,
+    },
+    circleImgContainer: {
+        height: LOGO_SIZE,
+        width: LOGO_SIZE,
+        backgroundColor: "white",
+        overflow: "hidden",
+        borderRadius: 100,
     },
 });
 
