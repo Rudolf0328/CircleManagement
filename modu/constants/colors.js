@@ -1,4 +1,5 @@
 export default colors = {
-  background : '#fff2f7',
-  card: "#ffffff"
+  background : '#fffaf5',
+  card: "#ffffff",
+  text: "#3d3d3d",
 }
