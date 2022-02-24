@@ -9,7 +9,7 @@ import DetailHomePage from '../DetailHome';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 
-const LOGO_SIZE = 10;
+const LOGO_SIZE = 50;
 const DetailPage = (props) => {
     const layout = useWindowDimensions();
     const [index, setIndex] = React.useState(0);    
@@ -23,7 +23,7 @@ const DetailPage = (props) => {
     const renderScene = ({ route }) => {
         switch (route.key) {
             case "first":
-                return <DetailHomePage/>;
+                return <DetailHomePage introduceText={props.introduceText}/>;
             case "second":
                 return <View style={{ flex: 1, backgroundColor: "ff4081" }} />;
             case "third":
@@ -39,15 +39,23 @@ const DetailPage = (props) => {
                 <TouchableOpacity>
                     <Icon name="chevron-back" style={styles.iconStyle} />
                 </TouchableOpacity>
-                <TouchableHighlight style={styles.circleImgContainer}>
-                    <Image
-                        style={styles.circleImage}
-                        source={require('../../images/eoslogo.png')}
-                        resizeMode='contain'
-                    />
-                </TouchableHighlight>
                 
-                <Text style={styles.circleNameText}>{props.circleName}</Text> 
+                <View style={{
+                    flex: 0,
+                    flexDirection: 'row',
+                    justifyContent: "center"
+                }}>
+                    <TouchableHighlight style={styles.circleImgContainer}>
+                        <Image
+                            style={styles.circleImage}
+                            source={require('../../images/eoslogo.png')}
+                            resizeMode='contain'
+                        />
+                    </TouchableHighlight>
+
+                    <Text style={styles.circleNameText}>{props.circleName}</Text>
+
+                </View>
                 
                 <TouchableOpacity>
                     <Icon name="settings-outline" style={styles.iconStyle} />
@@ -94,15 +102,21 @@ const styles = StyleSheet.create({
     header: {
         flex: 0,
         flexDirection: "row",
-        alignItems: "stretch",
+        alignItems: "center",
         justifyContent: "space-between",
-        margin: consts.default_margin,
+        margin: consts.default_margin,                                                                                                                      
+    },
+    center_header: {
+        flex: 0,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
     },
     iconStyle: {
         flex: 0,
         fontSize: 30,
         color: colors.text,
-        alignSelf: "center",
+        alignSelf: "flex-end"
     },
     circleNameText: {
         flex: 0,
@@ -122,6 +136,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         overflow: "hidden",
         borderRadius: 100,
+        marginRight: 10,
     },
 });
 
