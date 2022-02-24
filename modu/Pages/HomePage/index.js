@@ -6,11 +6,15 @@ import MyCircle from './myCircle';
 
 const Tab = createMaterialTopTabNavigator();
 
+// dummy data
+const allCircles = ["EOS", "ALOHA", "ICEWALL", "HAI", "OOPARTS", "MDBB", "몽쉘통통", "어리버리"];
+const myCircles = ["EOS", "ICEWALL"];
+
 function Tabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="AllCircle" component={AllCircle}/>
-      <Tab.Screen name="MyCircle" component={MyCircle}/>
+      <Tab.Screen name="AllCircle" children={() => <AllCircle circles={allCircles}></AllCircle>}/>
+      <Tab.Screen name="MyCircle" children={() => <MyCircle circles={myCircles}></MyCircle>}/>
     </Tab.Navigator>
   );
 }
