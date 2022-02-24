@@ -9,6 +9,7 @@ const App = () => {
 
     <>
       <SafeAreaView/>
+      {/* <DetailPage circleName={"EOS"}></DetailPage> */}
       <HomePage></HomePage>
     </>
   );

@@ -53,6 +53,7 @@ const DetailPage = (props) => {
                 renderTabBar={props => (
                     <TabBar
                         {...props}
+                        scrollEnabled={false}
                         indicatorStyle={{
                             backgroundColor: "black",
                             
