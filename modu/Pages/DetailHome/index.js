@@ -4,6 +4,7 @@ import colors from '../../constants/colors';
 import { Fonts } from '../../Fonts';
 import { DetailCalendar } from './Calendar';
 import consts from '../../constants/consts';
+import Announcement from './Announcement';
 
 const DetailHomePage = (props) => {
   return (
@@ -13,6 +14,8 @@ const DetailHomePage = (props) => {
           <Text style={styles.introduce_text}>{props.introduceText}</Text>
         </View>
         <DetailCalendar style={styles.calendar} /> 
+
+        <Announcement/>
       </ScrollView>
     </SafeAreaView>
   );

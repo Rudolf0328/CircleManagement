@@ -8,12 +8,8 @@ const App = () => {
   return (
     <DetailPage 
       circleName={"[한양대] 에오스"}
-      introduceText={"에오스는 한양대학교의 유일한 안드로이드 앱 개발 동아리입니다!"}
+      introduceText={"에오스는 한양대학교의 안드로이드 앱 개발 동아리 입니다"}
     ></DetailPage>
-    // <>
-    //   <SafeAreaView/>
-    //   <HomePage></HomePage>
-    // </>
   );
 };
 export default App;

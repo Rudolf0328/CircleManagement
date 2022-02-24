@@ -70,6 +70,7 @@ const DetailPage = (props) => {
                 renderTabBar={props => (
                     <TabBar
                         {...props}
+                        scrollEnabled={false}
                         indicatorStyle={{
                             backgroundColor: "black",
                             
@@ -131,8 +132,6 @@ const styles = StyleSheet.create({
         borderRadius: 100,
     },
     circleImgContainer: {
-        height: LOGO_SIZE,
-        width: LOGO_SIZE,
         backgroundColor: "white",
         overflow: "hidden",
         borderRadius: 100,
