@@ -7,8 +7,8 @@ import MyCircle from './myCircle';
 const Tab = createMaterialTopTabNavigator();
 
 // dummy data
-const allCircles = ["EOS", "ALOHA", "ICEWALL", "HAI", "OOPARTS", "MDBB", "몽쉘통통", "어리버리"];
-const myCircles = ["EOS", "ICEWALL"];
+const allCircles = ["eos", "aloha", "icewall", "hai", "ooparts", "mdbb", "mong"];
+const myCircles = ["eos", "icewall"];
 
 function Tabs() {
   return (

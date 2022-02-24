@@ -40,6 +40,7 @@ const AllCircle = (props) => {
           columnWrapperStyle={{
             justifyContent: "space-evenly",
             marginBottom: 23,
+            // marginVertical: 15
             // marginHorizontal: 40
           }}
           // onLayout={e => setContainerWidth(e.nativeEvent.layout.width)}
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
   circles: {
     flex: 1,
     width: '100%',
+    marginTop: 25
     // backgroundColor: '#fff'
   }
 });
