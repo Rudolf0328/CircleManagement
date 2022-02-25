@@ -4,7 +4,6 @@ import { TouchableHighlight } from 'react-native-gesture-handler';
 
 const Circle = (props) => {
   const logo = '../../images/logo_' + props.circleName + '.jpg';
-  console.log(logo)
   return (<View style={style.container}>
     <TouchableHighlight style={style.imageShadow}>
       <Image source={require('../../images/logo_eos.jpg')} style={style.image}></Image>
