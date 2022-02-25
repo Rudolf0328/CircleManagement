@@ -3,12 +3,15 @@ import { View, Text, Image, ImageBackground, StyleSheet } from 'react-native';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 
 const Circle = (props) => {
-  const logo = '../../images/logo_' + props.circleName + '.jpg';
+  // const logo = '../../images/logo_' + props.circleName + '.jpg';
+  // console.log(props.circle)
+  console.log(props.circle.logo);
+  console.log(props.circle.name);
   return (<View style={style.container}>
     <TouchableHighlight style={style.imageShadow}>
       <Image source={require('../../images/logo_eos.jpg')} style={style.image}></Image>
     </TouchableHighlight>
-    <Text style={style.text}>{props.circleName}</Text>
+    <Text style={style.text}>{props.circle.name}</Text>
   </View>);
 }
 

@@ -21,7 +21,7 @@ const AllCircle = (props) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.circles}>
         <FlatList
-          keyExtractor={item => item.toString()}
+          keyExtractor={item => item.name.toString()}
           scrollEnabled={true}
           data={circles}
           numColumns={2}
@@ -32,7 +32,7 @@ const AllCircle = (props) => {
             // marginHorizontal: 40
           }}
           // onLayout={e => setContainerWidth(e.nativeEvent.layout.width)}
-          renderItem={({item}) => <Circle circleName={item} />}
+          renderItem={({item}) => <Circle circle={item} />}
           />
         {/* <Text>All Circle</Text> */}
       </View>
