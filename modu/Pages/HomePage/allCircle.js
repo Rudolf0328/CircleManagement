@@ -9,20 +9,24 @@ import Circle from './circle';
 const AllCircle = (props) => {
   const { circles } = props;
   const [search, setSearch] = useState("");
-  const [searchCircles, setSearchCircles] = useState(circles);
 
-  // setSearchCircles(circles);
-  const margins = 39 * 2;
-  const numColumns = 2;
+  if(circles.length % 2 == 1) {
+    circles.push({name: "test", logo: ''});
+    console.log("circles" + circles);
+  }
+
+  const [searchCircles, setSearchCircles] = useState(circles);
 
   searchFunction = (search) => {
     const searched = circles.filter((item) => {
-      const data = `${item.toUpperCase()})`;
+      const data = `${item.name.toUpperCase()})`;
       const searchData = search.toUpperCase();
-      console.log(data.indexOf(searchData));
       return data.indexOf(searchData) > -1;
     });
     setSearch(search);
+    if(searched.length % 2 == 1) {
+      searched.push({name: "test", logo: ''});
+    }
     setSearchCircles(searched);
   };
 
@@ -43,7 +47,7 @@ const AllCircle = (props) => {
       </View>
       <View style={styles.circles}>
         <FlatList
-          keyExtractor={item => item.toString()}
+          keyExtractor={item => item.name.toString()}
           scrollEnabled={true}
           data={searchCircles}
           numColumns={2}
@@ -54,7 +58,7 @@ const AllCircle = (props) => {
             // marginHorizontal: 40
           }}
           // onLayout={e => setContainerWidth(e.nativeEvent.layout.width)}
-          renderItem={({item}) => <Circle circleName={item} />}
+          renderItem={({item}) => <Circle circle={item} />}
           />
         {/* <Text>All Circle</Text> */}
       </View>
