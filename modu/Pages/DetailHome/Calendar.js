@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from 'react-native';
 import { Calendar, LocaleConfig } from "react-native-calendars";
+import consts from "../../constants/consts";
 import { Fonts } from '../../Fonts';
 
 LocaleConfig.locales['fr'] = {
@@ -20,7 +21,7 @@ export const DetailCalendar = ({style}) => {
         <View style={style}>
             <Calendar
                 style={{
-                    borderRadius: 10,
+                    borderRadius: consts.default_radius,
                     borderWidth: 2,
                     borderColor: "#f0f0f0"
                     // backgroundColor: "#080808"

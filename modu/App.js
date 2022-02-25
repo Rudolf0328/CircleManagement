@@ -6,12 +6,10 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-
-    <>
-      <SafeAreaView/>
-      {/* <DetailPage circleName={"EOS"}></DetailPage> */}
-      <HomePage></HomePage>
-    </>
+    <DetailPage 
+      circleName={"[한양대] 에오스"}
+      introduceText={"에오스는 한양대학교의 안드로이드 앱 개발 동아리 입니다"}
+    ></DetailPage>
   );
 };
 export default App;

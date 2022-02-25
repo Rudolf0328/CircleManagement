@@ -13,7 +13,7 @@ export default function App() {
                 onPress={() => Alert.alert('TODO')}>
                 <Image 
                     style={styles.image}
-                    source={require('../images/kakao_login.png')}
+                    source={require('../../images/kakao_login.png')}
                     resizeMode='contain'
                 />
             </TouchableOpacity>
