@@ -5,6 +5,7 @@ import colors from '../../constants/colors';
 import { SearchBar } from 'react-native-elements';
 // import CardView from './card';
 import Circle from './circle';
+import FloatingActionButton from './floatingActionButton';
 
 const AllCircle = (props) => {
   const { circles } = props;
@@ -62,6 +63,7 @@ const AllCircle = (props) => {
           />
         {/* <Text>All Circle</Text> */}
       </View>
+      {/* <FloatingActionButton/> */}
     </SafeAreaView>
   );
 };
