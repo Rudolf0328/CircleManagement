@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View, FlatList } from 'react-native';
-import colors from '../../constants/colors';
-// import SearchBar from './serachBar';
+import { SafeAreaView, StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
-// import CardView from './card';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+import colors from '../../constants/colors';
 import Circle from './circle';
 
 const AllCircle = (props) => {
@@ -62,6 +62,9 @@ const AllCircle = (props) => {
           />
         {/* <Text>All Circle</Text> */}
       </View>
+        <TouchableOpacity style={styles.addButton}>
+          <Icon name='add-outline' size={30} color='#fff' />
+        </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -76,14 +79,23 @@ const styles = StyleSheet.create({
   searchBar: {
     // flex: 1,
     width: '100%',
-    height: 50,
-    // backgroundColor: '#fff'
+    height: 75,
+    // backgroundColor: 'black'
   },
   circles: {
     flex: 1,
     width: '100%',
-    marginTop: 25
-    // backgroundColor: '#fff'
+  },
+  addButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 60,
+    position: 'absolute',
+    bottom: 15,
+    right: 15,
+    height: 60,
+    backgroundColor: colors.button,
+    borderRadius: 100,
   }
 });
 
